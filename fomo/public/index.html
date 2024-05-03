@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOT FOMO </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div id="game">
+        <h1>NOT FOMO</h1>
+        <p>Timer: <span id="timer">30</span>s</p>
+        <p>Key Price: <span id="keyPrice">100</span> Points</p>
+        <button id="buyButton" onclick="buyKey()">Buy Key</button>
+        <p id="message"></p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+runtime: nodejs18  # Specify the Node.js version
+env: standard
+env_variables:
+  SUPABASE_URL: "https://ekodaqvkctdbgkvdbfrp.supabase.co"
+  SUPABASE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVrb2RhcXZrY3RkYmdrdmRiZnJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjMyNjQ1MTUsImV4cCI6MTk3ODg0MDUxNX0.C6nXaYCs0ieotVgdVPG8Gn9PjJq5iO8geMjGY71Avmk"
+
+handlers:
+- url: /.*
+  script: auto
+  secure: always
+
+automatic_scaling:
+  target_cpu_utilization: 0.6
+  min_instances: 1
+  max_instances: 3
